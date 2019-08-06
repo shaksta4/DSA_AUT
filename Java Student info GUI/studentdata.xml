@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<students 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="students.xsd">
+	 <description>2017 S2 Student Set</description>
+	 <student studentID="0122080" gender="M">
+		 <firstname>Seth</firstname>
+		 <lastname>Hall</lastname>
+		 <pictureURL>CAT.jpg</pictureURL>
+		 <birthday day="01" month="05" year="1983"/>
+		 <paper>Highly Secure Systems</paper>
+		 <paper>Data Structures and Algorithms</paper>
+		 <paper>Programming 2</paper>
+	 </student>
+	 <student studentID="1311607" gender="M">
+		 <firstname>Adam</firstname>
+		 <lastname>Campbell</lastname>
+		 <pictureURL>orcs1.jpeg</pictureURL>
+		 <birthday day="31" month="05" year="1992"/>
+		 <paper>Neuroinformatic</paper>
+		 <paper>System Security</paper>
+		 <paper>Research Methods</paper>
+		 <paper>Data Mining</paper>
+	 </student>
+	 <student studentID="9394945" gender="M">
+		 <firstname>Queen</firstname>
+		 <lastname>Elizabeth</lastname>
+		 <pictureURL>ZULU.jpg</pictureURL>
+		 <birthday day="03" month="06" year="1980"/>
+		 <paper>Tea Drinking</paper>
+		 <paper>Etiquette 101</paper>
+	 </student>
+	 <student studentID="11994823" gender="M">
+		 <firstname>Richard</firstname>
+		 <lastname>Harrow</lastname>
+		 <pictureURL>CAT.jpg</pictureURL>
+		 <birthday day="03" month="01" year="1980"/>
+		 <paper>Bootlegging</paper>
+		 <paper>Shooting</paper>
+	 </student>
+</students>

@@ -1,0 +1,55 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+         students.xsd XML Schema for defining a bunch of students
+      </xsd:documentation>
+   </xsd:annotation>
+   
+
+   <xsd:element name="students">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="description" type="xsd:string"
+               minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="student" type="StudentType"
+               minOccurs="0" maxOccurs="unbounded"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+
+   <xsd:complexType name="StudentType">
+      <xsd:sequence>
+         <xsd:element name="firstname" type="xsd:string"
+               minOccurs="1" maxOccurs="1"/>
+         <xsd:element name="lastname" type="xsd:string"
+               minOccurs="1" maxOccurs="1"/>
+          <xsd:element name="pictureURL" type="xsd:string"
+               minOccurs="0" maxOccurs="1"/>      
+                    
+         <xsd:element name="birthday" minOccurs="1" maxOccurs="1">
+            <xsd:complexType>
+               <xsd:attribute name="day" type="xsd:string"
+                  use="required"/>
+               <xsd:attribute name="month" type="xsd:string"
+                  use="required"/>
+               <xsd:attribute name="year" type="xsd:string"
+                  use="required"/>
+            </xsd:complexType>
+         </xsd:element>
+
+          <xsd:element name="paper" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+
+      </xsd:sequence>
+      
+      <xsd:attribute name="studentID" type="xsd:string" use="required"/>
+      
+      <xsd:attribute name="gender" use="optional" default="M">
+        <xsd:simpleType>
+           <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="M"/>
+              <xsd:enumeration value="F"/>
+           </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:attribute>
+   </xsd:complexType>
+</xsd:schema>
